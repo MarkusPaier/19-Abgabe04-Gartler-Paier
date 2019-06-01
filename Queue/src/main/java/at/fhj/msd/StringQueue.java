@@ -59,7 +59,7 @@ public class StringQueue implements Queue {
 	}
 
 	/**
-	 * The method takes the first element of the queue, returns is and then deletes it. If the element is null a
+	 * The method takes the first element of the queue, returns it and then deletes it. If the element is null a
 	 * NoSuchElementException is thrown.
 	 * @return
 	 */
