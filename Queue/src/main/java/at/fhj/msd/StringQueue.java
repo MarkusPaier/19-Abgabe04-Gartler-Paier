@@ -25,7 +25,7 @@ public class StringQueue implements Queue {
 	 * @param maxsize
 	 */
 	public StringQueue(int maxsize){
-		logger.info("constructor with maxSize" + maxsize);
+		logger.info("constructor with maxSize " + maxsize);
 		maxSize = maxSize;
 	}
 
@@ -37,7 +37,7 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public boolean offer(String obj) {
-		logger.info("offer" + obj);
+		logger.info("offer " + obj);
 		if(elements.size()!= maxSize)
 			elements.add(obj);
 		else
