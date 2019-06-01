@@ -18,7 +18,7 @@
 	    **3. Fehler:** die Exception wird nie geworfen, weil davor eine Zuweisung stattfindet und daher ist das Element nicht null;
 	    Lösung: keine Zuweisung;
 	    
-- [ ] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
+- [x] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
 	-  IntegrierenSie ein Bild (der generierten Dokumentation) in Ihren Report.
 - [ ] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
 	-  Sie werden die „selben“ Testfälle mehrfach erstellen müssen um „mehrere Variationen“ für einen möglichst vollständigen Test zu erreichen. Achten Sie dabei mit unterschiedlichen Daten zu testen.
