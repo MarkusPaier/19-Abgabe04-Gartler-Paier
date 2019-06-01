@@ -28,7 +28,7 @@
 können.
 	-  EntwicklerInnen Informationen hinzufügen.
 	-  Integration Logging Bibliothek log4j mittels Maven Dependencies
-- [ ] Log4j (Version 2) integrieren und in jeder Methode ins Log schreiben
+- [x] Log4j (Version 2) integrieren und in jeder Methode ins Log schreiben
 	-  Siehe aktualisiertes Stack Beispiel.
 	-  Erstellen Sie einen Statischen Logger der auf die Konsole schreibt.
 	-  Konfigurieren Sie Logger über ein properties File.
