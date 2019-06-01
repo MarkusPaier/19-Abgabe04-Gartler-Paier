@@ -3,6 +3,8 @@ package at.fhj.msd;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 // there's some Bugs included, try to debug the code and fix the Bugs
 // there are different Bugs, wrong implementation, typos, ...
@@ -13,16 +15,17 @@ import java.util.NoSuchElementException;
  * It has methods to add and remove or poll elements
  */
 public class StringQueue implements Queue {
-	
+
 	private List<String> elements = new ArrayList<String>();
 	private int maxSize = 5;
+	private static final Logger logger = LogManager.getLogger(StringQueue.class);
 
 	/**
 	 * The method sets the maximum size of the list.
 	 * @param maxsize
 	 */
 	public StringQueue(int maxsize){
-
+		logger.info("constructor with maxSize" + maxsize);
 		maxSize = maxSize;
 	}
 
@@ -34,11 +37,12 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public boolean offer(String obj) {
+		logger.info("offer" + obj);
 		if(elements.size()!= maxSize)
 			elements.add(obj);
 		else
 			return false;
-		
+
 		return true;
 	}
 
@@ -49,25 +53,28 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String poll() {
+		logger.info("poll");
 		String element = peek();
-		
+
 		if(elements.size() > 0){
 			elements.remove(0);
 		}
-		
+
 		return element;
 	}
 
 	/**
-	 * The method takes the first element of the queue, returns it and then deletes it. If the element is null a
+	 * The method takes the first element of the queue, returns is and then deletes it. If the element is null a
 	 * NoSuchElementException is thrown.
 	 * @return
 	 */
 	@Override
 	public String remove() {
+		logger.info("remove");
 		String element = poll();
-		if(element == null)
-			throw new NoSuchElementException("there's no element any more");
+		if(element == null){
+			logger.error("throw NoSuchElementtException");
+			throw new NoSuchElementException("there's no element any more");}
 
 		return element;
 	}
@@ -78,12 +85,13 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String peek() {
+		logger.info("peek");
 		String element;
 		if(elements.size() > 0)
 			element = elements.get(0);
 		else
 			element = null;
-		
+
 		return element;
 	}
 
@@ -94,10 +102,12 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String element() {
+		logger.info("element");
 		String element = peek();
-		if(element == null)
+		if(element == null) {
+			logger.error("throw NoSuchElementException");
 			throw new NoSuchElementException("there's no element any more");
-		
+		}
 		return element;
 	}
 
