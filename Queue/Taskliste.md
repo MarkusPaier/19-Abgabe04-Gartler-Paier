@@ -5,10 +5,19 @@
 - [ ] Taskergebnisse Schritt für Schritt auf Git stellen
 	- Führung Taskliste
 	-  Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B.     Testfälle geschriebenso wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
-- [ ] Korrigieren Sie den Codebzw. Debuggen Sie ihn um die Fehler zu finden
+- [x] Korrigieren Sie den Codebzw. Debuggen Sie ihn um die Fehler zu finden
 	-  Es befinden sich gesamt 3 Fehler im Source Code.
 	-  Bei Bedarf Optimieren Sie das Queue Beispiel.
 	-  Ergänzen Sie das Beispiel nach eigenen      Ermessen um es testen zu können.
+	
+	**Lösungen:**
+	    **1. Fehler:** language level to 6 - @Override in interfacesFile war nicht korrekt 
+	    Lösung: -> Project Structure -> Modules -> Sources -> Language level: set lecel higher or default
+	    **2. Fehler:** poll() war nicht korrekt. IF-Bedingung war falsch gesetzt. 
+	    Lösung: > statt == zeichen. Dadurch kommt man in den Block und das Element gelöscht.
+	    **3. Fehler:** die Exception wird nie geworfen, weil davor eine Zuweisung stattfindet und daher ist das Element nicht null;
+	    Lösung: keine Zuweisung;
+	    
 - [ ] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
 	-  IntegrierenSie ein Bild (der generierten Dokumentation) in Ihren Report.
 - [ ] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
@@ -40,5 +49,3 @@
 	-   PDF erstellen (zB Dillinger) 
 - [ ] Überprüfung Vollständigkeit der Abgabe
 - [ ]  Abgabe PDF Version der Abgabe
-
-> Written with [StackEdit](https://stackedit.io/).
