@@ -44,8 +44,8 @@
                 </configuration>
             </plugin>
 
+            <!-- build an executable JAR -->
             <plugin>
-                <!-- build an executable JAR -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.0.2</version>
@@ -60,20 +60,15 @@
                 </configuration>
             </plugin>
 
-
+            <!-- run the executable JAR -->
             <plugin>
-                <!-- run the executable JAR -->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
                     <mainClass>at.fhj.msd.Main</mainClass>
-                    <arguments>
-                        <argument>Paier Olczak</argument>
-                    </arguments>
                 </configuration>
             </plugin>
-
 
             <!-- maven site for documentation -->
             <plugin>
