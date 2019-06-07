@@ -28,7 +28,7 @@ public class StringQueueTest {
      */
     @Test
     public void testIsOfferTrue() {
-        assertEquals(true, q.offer("test1"));
+        assertTrue(q.offer("test1"));
     }
 
     /**
@@ -42,7 +42,7 @@ public class StringQueueTest {
         q.offer("test3");
         q.offer("test4");
         q.offer("test5");
-        assertEquals(false, q.offer("test6"));
+        assertFalse(q.offer("test6"));
     }
 
     /**
