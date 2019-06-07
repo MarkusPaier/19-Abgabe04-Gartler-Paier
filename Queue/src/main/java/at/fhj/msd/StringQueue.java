@@ -88,7 +88,8 @@ public class StringQueue implements Queue {
 		String element = poll();
 		if(element == null){
 			logger.error("throw NoSuchElementtException");
-			throw new NoSuchElementException("there's no element any more");}
+			throw new NoSuchElementException("there's no element any more");
+		}
 
 		return element;
 	}

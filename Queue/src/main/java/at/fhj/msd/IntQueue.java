@@ -39,8 +39,7 @@ public class IntQueue implements Queue {
     }
 
     /**
-     * The method adds a new element to the list and returns true if the addition worked fine and false if it did not
-     * work.
+     * The method adds a new element to the list and returns true if the addition worked fine and false if it did not work.
      *
      * @param obj parameter to add a new element to the queue
      * @return boolean if added successfully it returns true
@@ -60,8 +59,7 @@ public class IntQueue implements Queue {
     }
 
     /**
-     * The method return the first element of the queue (head) and deletes it afterwards.  If the queue is empty, null
-     * is returned.
+     * The method return the first element of the queue (head) and deletes it afterwards.  If the queue is empty, null is returned.
      *
      * @return returns the head element
      */
@@ -71,7 +69,7 @@ public class IntQueue implements Queue {
         Integer element = peek();
 
         if (elements.size() > 0) {
-			logger.info("element successful removed");
+            logger.info("element successful removed");
             elements.remove(0);
         }
 
@@ -79,8 +77,7 @@ public class IntQueue implements Queue {
     }
 
     /**
-     * The method takes the first element of the queue, returns is and then deletes it. If the element is null a
-     * NoSuchElementException is thrown.
+     * The method takes the first element of the queue, returns is and then deletes it. If the element is null a NoSuchElementException is thrown.
      *
      * @return removes the head element of the queue
      */
