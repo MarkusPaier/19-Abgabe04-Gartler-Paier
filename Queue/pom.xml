@@ -105,4 +105,24 @@
             <version>2.11.2</version>
         </dependency>
     </dependencies>
+
+    <reporting>
+        <plugins>
+
+            <!-- maven site for documentation -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+
+            <!-- reporting project information -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+
+        </plugins>
+    </reporting>
 </project>

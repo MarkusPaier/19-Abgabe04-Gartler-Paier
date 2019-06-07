@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project>
+    <body>
+        <menu name="Queue Overview">
+            <item name="About Queue" href="markdown/about.md"/>
+            <item name="Lab Report" href="markdown/report.md"/>
+        </menu>
+
+        <menu ref="reports"/>
+    </body>
+</project>
