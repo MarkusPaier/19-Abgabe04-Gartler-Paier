@@ -38,7 +38,7 @@ können.
 - [x] Maven Site Dokumentation erstellen
 	- [x] Inklusive Javadoc Code und Javadoc Test Klassen
 	- [x] Inklusive Menü mit Verweis auf manuell erstellte Seite
-		- [ ] Seite erläutert Funktionsweise Queue
+		- [x] Seite erläutert Funktionsweise Queue
 	- [ ] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
 		- [ ] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
 - [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
