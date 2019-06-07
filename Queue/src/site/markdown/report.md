@@ -75,7 +75,7 @@ ___
 	if (elements.size() == 0) {
 			elements.remove(0);
 	}
-  ```
+    ```
 	Lösung: statt == muss die Abfrage mit > Zeichen sein, weil sonst würde nur ein Element gelöscht werden, wenn die Größe des Elements 0 ist.
 	```java
 	if (elements.size() > 0) {
@@ -246,7 +246,7 @@ ___
 	* Es wurde geschaut, dass alle Tasks vollständig abgearbeitet wurden.
 
 10. Aus einem Markdown eine PDF generieren
-	
+
 ___
 ## LINKS / LITERATUR
 
