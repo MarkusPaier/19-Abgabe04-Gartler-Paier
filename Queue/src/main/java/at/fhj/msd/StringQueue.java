@@ -25,7 +25,7 @@ public class StringQueue implements Queue {
 	 * @param maxSize
 	 */
 	public StringQueue(int maxSize){
-		logger.info("constructor with maxSize " + maxSize);
+		logger.info("constructor with maxSize = " + maxSize);
 		this.maxSize = maxSize;
 	}
 
@@ -38,10 +38,13 @@ public class StringQueue implements Queue {
 	@Override
 	public boolean offer(Object obj) {
 		logger.info("offer " + obj);
-		if(elements.size()!= maxSize)
+		if(elements.size()!= maxSize) {
+			logger.info("element has been added");
 			elements.add((String) obj);
-		else
+		} else {
+			logger.info("element has not been added");
 			return false;
+		}
 
 		return true;
 	}
@@ -56,7 +59,8 @@ public class StringQueue implements Queue {
 		logger.info("poll");
 		String element = peek();
 
-		if(elements.size() > 0){
+		if (elements.size() > 0) {
+			logger.info("element successful removed");
 			elements.remove(0);
 		}
 
@@ -87,10 +91,13 @@ public class StringQueue implements Queue {
 	public String peek() {
 		logger.info("peek");
 		String element;
-		if(elements.size() > 0)
+		if(elements.size() > 0) {
+			logger.info("get head element");
 			element = elements.get(0);
-		else
+		} else {
+			logger.info("no element is available");
 			element = null;
+		}
 
 		return element;
 	}
