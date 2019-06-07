@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<project>
+<project name="Queue">
+    <publishDate position="right"/>
+    <version position="right"/>
+
     <body>
         <menu name="Queue Overview">
-            <item name="About Queue" href="markdown/about.md"/>
-            <item name="Lab Report" href="markdown/report.md"/>
+            <item name="About Queue" href="about.html"/>
+            <item name="Lab Report" href="report.html"/>
         </menu>
 
         <menu ref="reports"/>

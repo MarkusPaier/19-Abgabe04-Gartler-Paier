@@ -20,9 +20,9 @@
 	    **4. Fehler:** Im Konstruktor der StringQueue wurde der Übergabeparameter nicht richtig übergeben
 	    
 - [x] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
-	- [ ] IntegrierenSie ein Bild (der generierten Dokumentation) in Ihren Report.
+	- [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 - [x] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
-	- [x]  Sie werden die „selben“ Testfälle mehrfach erstellen müssen um „mehrere Variationen“ für einen möglichst vollständigen Test zu erreichen. Achten Sie dabei mit unterschiedlichen Daten zu testen.
+	- [x] Sie werden die „selben“ Testfälle mehrfach erstellen müssen um „mehrere Variationen“ für einen möglichst vollständigen Test zu erreichen. Achten Sie dabei mit unterschiedlichen Daten zu testen.
 	- [x] JavaDoc Kommentare erstellen.
 	- [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 - [x] Passen Sie Ihr pom.xml auf das Projekt an, damit Sie das Projekt erstellenaber auch Dokumentation generieren 
