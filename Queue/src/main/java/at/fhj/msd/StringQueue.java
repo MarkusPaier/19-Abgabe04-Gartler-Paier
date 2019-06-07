@@ -1,3 +1,10 @@
+/*
+ * class: StringQueue
+ * description: The class is a queue with the following methods: peek, poll, remove etc
+ * StringQueue is for String values.
+ * last change: 7.6.2019
+ */
+
 package at.fhj.msd;
 
 import java.util.ArrayList;
@@ -6,13 +13,13 @@ import java.util.NoSuchElementException;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-// there's some Bugs included, try to debug the code and fix the Bugs
-// there are different Bugs, wrong implementation, typos, ...
-// write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
-
 /**
  * The class consists of an Arraylist of Strings and an integer called maxSize.
  * It has methods to add and remove or poll elements
+ *
+ * @author Markus Paier
+ * @author Ulrike Gartler
+ * @version 1.0
  */
 public class StringQueue implements Queue {
 
@@ -22,7 +29,7 @@ public class StringQueue implements Queue {
 
 	/**
 	 * The constructor sets the maximum size of the list.
-	 * @param maxSize
+	 * @param maxSize is the maximum size of the queue
 	 */
 	public StringQueue(int maxSize){
 		logger.info("constructor with maxSize = " + maxSize);
@@ -32,8 +39,9 @@ public class StringQueue implements Queue {
 	/**
 	 * The method adds a new element to the list and returns true if the addition worked fine and false if it did not
 	 * work.
-	 * @param obj
-	 * @return
+	 *
+	 * @param obj parameter to add a new element to the queue
+	 * @return boolean if added successfully it returns true
 	 */
 	@Override
 	public boolean offer(Object obj) {
@@ -52,7 +60,8 @@ public class StringQueue implements Queue {
 	/**
 	 * The method return the first element of the queue (head) and deletes it afterwards.  If the queue is empty, null
 	 * is returned.
-	 * @return
+	 *
+	 * @return returns the head element
 	 */
 	@Override
 	public String poll() {
@@ -70,7 +79,8 @@ public class StringQueue implements Queue {
 	/**
 	 * The method takes the first element of the queue, returns is and then deletes it. If the element is null a
 	 * NoSuchElementException is thrown.
-	 * @return
+	 *
+	 * @return removes the head element of the queue
 	 */
 	@Override
 	public String remove() {
@@ -85,7 +95,8 @@ public class StringQueue implements Queue {
 
 	/**
 	 * The method return the first element of the queue but does not delete it. If the queue is empty, null is returned.
-	 * @return
+	 *
+	 * @return returns the head element
 	 */
 	@Override
 	public String peek() {
@@ -105,7 +116,8 @@ public class StringQueue implements Queue {
 	/**
 	 * The method return the first element of the queue, does not delete it and if the element is null, a
 	 * NoSuchElementException is thrown.
-	 * @return
+	 *
+	 * @return returns the head element
 	 */
 	@Override
 	public String element() {

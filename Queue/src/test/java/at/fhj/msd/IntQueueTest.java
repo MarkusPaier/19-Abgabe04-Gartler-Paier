@@ -1,3 +1,9 @@
+/*
+ * class: IntQueueTest
+ * description: The class tests the IntQueue.java class
+ * last change: 7.6.2019
+ */
+
 package at.fhj.msd;
 
 import org.junit.Before;
@@ -9,9 +15,16 @@ import java.util.NoSuchElementException;
 
 import static org.junit.Assert.*;
 
+/**
+ * The class tests the function of the IntQueue.java class
+ *
+ * @author Markus Paier
+ * @author Ulrike Gartler
+ * @version 1.0
+ */
 public class IntQueueTest {
 
-    public IntQueue q;
+    private IntQueue q;
 
     /**
      * The test method sets the maximum size of the list before the testing begins.
