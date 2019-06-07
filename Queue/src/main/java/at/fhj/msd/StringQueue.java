@@ -17,7 +17,7 @@ import org.apache.logging.log4j.LogManager;
 public class StringQueue implements Queue {
 
 	private List<String> elements = new ArrayList<String>();
-	private int maxSize = 5;
+	private int maxSize;
 	private static final Logger logger = LogManager.getLogger(StringQueue.class);
 
 	/**
@@ -26,7 +26,7 @@ public class StringQueue implements Queue {
 	 */
 	public StringQueue(int maxsize){
 		logger.info("constructor with maxSize " + maxsize);
-		maxSize = maxSize;
+		this.maxSize = maxSize;
 	}
 
 	/**

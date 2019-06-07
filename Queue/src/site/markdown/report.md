@@ -17,6 +17,7 @@
 	    Lösung: > statt == zeichen. Dadurch kommt man in den Block und das Element gelöscht.
 	    **3. Fehler:** die Exception wird nie geworfen, weil davor eine Zuweisung stattfindet und daher ist das Element nicht null;
 	    Lösung: keine Zuweisung;
+	    **4. Fehler:** Im Konstruktor der StringQueue wurde der Übergabeparameter nicht richtig übergeben
 	    
 - [x] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
 	-  IntegrierenSie ein Bild (der generierten Dokumentation) in Ihren Report.
