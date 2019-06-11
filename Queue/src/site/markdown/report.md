@@ -57,7 +57,7 @@ können.
 	- [x] Korrekturlesen Dokumentation
 	- [x] PDF erstellen (zB Dillinger)
 - [x] Überprüfung Vollständigkeit der Abgabe
-- [ ] Abgabe PDF Version der Abgabe
+- [x] Abgabe PDF Version der Abgabe
 ___
 ## Vorgehen
 1. Taskliste, Queue Vorlage, Repository und Maven Projekt Grundstruktur
