@@ -121,14 +121,14 @@ ___
 3. JavaDoc generieren
 	* Zuerst wurde bei allem Methoden und Classen eine JavaDoc Dokumentation hinzugefügt.
 	Anschlißend wurden die JavaDoc Files generiert.
-	![JavaDoc](/src/site/resources/javadoc_1.JPG)
+	![JavaDoc](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/javadoc_1.JPG?raw=true)
 
-	![JavaDoc](/src/site/resources/javadoc_2.JPG)
+	![JavaDoc](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/javadoc_2.JPG?raw=true)
 
 4. JUint Tests erstellen
 	* Für die Tests wurde noch eine weitere Klasse "IntQueue" entwickelt.
 	Für jede Methode und Klasse wurden Tests geschrieben, damit der produktiver Code zu 100% abgedeckt wird. Außerdem wurde zu jeder TestMethode ein JavaDoc Dukumentation erstellt.
-	![JUint with JavaDoc](/src/site/resources/junit_javadoc.JPG)
+	![JUint with JavaDoc](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/junit_javadoc.jpg?raw=true)
 
 5. pom.xml file anpassen
 	* Developer Informationen hinzugefügt
@@ -152,17 +152,17 @@ ___
 	* Außerdem wurde ein Logger properties File erstellt, um die Konfigurationen zu definieren.
 	* Bei jder Methode wurde ein Info Lognachricht implementiert.
 	* Bevor ein Fehler geworfen wird, wurde eine Error Lognachricht hinzugefügt.
-	![Log4J int1](/src/site/resources/log4j_int_1.JPG)
-	![Log4J int2](/src/site/resources/log4j_int_2.JPG)
-	![Log4J string1](/src/site/resources/log4j_string_1.JPG)
-	![Log4J string2](/src/site/resources/log4j_string_2.JPG)
+	![Log4J int1](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/log4j_int_1.JPG?raw=true)
+	![Log4J int2](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/log4j_int_2.JPG?raw=true)
+	![Log4J string1](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/log4j_string_1.JPG?raw=true)
+	![Log4J string2](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/log4j_string_2.JPG?raw=true)
 
 7. Maven Site Dokumentation erstellen
 	* Es wurde eine Maven Site erstellt mit site.xml
 	* Außerdem wurden zwei Markdown Seiten erstellt (about.md und report.md)
 	* Diese beiden Seiten wurden in der Maven Site hinzugefügt
-	![Maven Site1](/src/site/resources/maven_site_1.JPG)
-	![Maven Site2](/src/site/resources/maven_site_2.JPG)
+	![Maven Site1](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/maven_site_1.JPG?raw=true)
+	![Maven Site2](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/maven_site_2.JPG?raw=true)
 
 8. Ein Markdown Lab Report erstellen
 	* Es wurde ein report.md File erstellt
@@ -246,6 +246,7 @@ ___
 	* Es wurde geschaut, dass alle Tasks vollständig abgearbeitet wurden.
 
 10. Aus einem Markdown eine PDF generieren
+	* Mithilfe atom.io wurde aus einem Markdown File ein PDF File generiert.
 
 ___
 ## LINKS / LITERATUR
