@@ -7,7 +7,7 @@ Members:
 ___
 ## About
 ```
-This Project is a part of the Mobile Software Development course "Configuration-Management" at University of Applied Science - FH Joanneum Graz.
+This Project is a part of the Mobile Software Development course "Configuration-Management" at the University of Applied Science - FH Joanneum Graz.
 The purpose of this repository is to learn how to deal with plugins, testing, debugging, Javadoc, Java4j and Maven Site.
 
 We downloaded the basic queue source code file from github repository (Michael Ulm) and worked through the tasklist below to fulfill the required tasks.

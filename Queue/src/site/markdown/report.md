@@ -4,7 +4,7 @@
 Abgabe Nr.: 04
 ```
 ```
-Authoren:
+Autoren:
 	Student 1: Markus Paier
 	Student 2: Ulrike Gartler
 ```
@@ -23,8 +23,8 @@ ___
     - [x] Queue Vorlage aus Repository:&nbsp; https://github.com/michaelulm/software-configuration-management/tree/master/test-automation/Queue
 - [x] Taskergebnisse Schritt für Schritt auf Git stellen
 	- [x] Führung Taskliste
-	- [x] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B.     Testfälle geschriebenso wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
-- [x] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
+	- [x] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
+- [x] Korrigieren Sie den Code bzw. debuggen Sie ihn um die Fehler zu finden
 	- [x] Es befinden sich gesamt 3 Fehler im Source Code.
 	- [x] Bei Bedarf Optimieren Sie das Queue Beispiel.
 	- [x] Ergänzen Sie das Beispiel nach eigenen      Ermessen um es testen zu können.
@@ -61,20 +61,20 @@ können.
 ___
 ## Vorgehen
 1. Taskliste, Queue Vorlage, Repository und Maven Projekt Grundstruktur
-	* Zuerst wurde eine Repositiory auf Github eingerichtet.
-	* Anschlißend wurde ein Maven Projekt Grundstruktur mit pom.xml und .gitignore file erstellt
-	* Außerdem wurde die Vorlage vom Professor übernommen, damit wir ein kornkretes Beispiel für unsere Übung haben.
+	* Zuerst wurde ein Repositiory auf Github eingerichtet.
+	* Anschließend wurde eine Maven Projekt Grundstruktur mit pom.xml und .gitignore file erstellt
+	* Außerdem wurde die Vorlage vom Lehrenden übernommen, damit wir ein konkretes Beispiel für unsere Übung haben.
 	* Zusätzlich wurde im Lab Report eine Taskliste erstellt.
 
 2. Den Code korrigieren bzw. debuggen
-	* Beim einfügen der Klasse StringQueue wurde ein Fehler vom Compiler angezeigt.
+	* Beim Einfügen der Klasse StringQueue wurde ein Fehler vom Compiler angezeigt.
 	Fehler: "language level to 6 - @Override in interfacesFile war nicht korrekt"
 	Lösung: unter -> Project Structure -> Modules -> Sources -> Language level: Level auf höher oder default setzen
-	* Bei der Methode poll() war die If-Bedingung nicht korrekt.
+	* Bei der Methode poll() war die if-Bedingung nicht korrekt.
 	```java
 	if (elements.size() == 0) {
 			elements.remove(0);
-	}
+	
     ```
 	Lösung: statt == muss die Abfrage mit > Zeichen sein, weil sonst würde nur ein Element gelöscht werden, wenn die Größe des Elements 0 ist.
 	```java
@@ -119,16 +119,16 @@ ___
 	```
 
 3. JavaDoc generieren
-	* Zuerst wurde bei allem Methoden und Classen eine JavaDoc Dokumentation hinzugefügt.
-	Anschlißend wurden die JavaDoc Files generiert.
+	* Zuerst wurde bei allen Methoden und Klassen eine JavaDoc Dokumentation hinzugefügt.
+	Anschließend wurden die JavaDoc Files generiert.
 	![JavaDoc](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/javadoc_1.JPG?raw=true)
 
 	![JavaDoc](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/javadoc_2.JPG?raw=true)
 
-4. JUint Tests erstellen
+4. JUnit Tests erstellen
 	* Für die Tests wurde noch eine weitere Klasse "IntQueue" entwickelt.
-	Für jede Methode und Klasse wurden Tests geschrieben, damit der produktiver Code zu 100% abgedeckt wird. Außerdem wurde zu jeder TestMethode ein JavaDoc Dukumentation erstellt.
-	![JUint with JavaDoc](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/junit_javadoc.jpg?raw=true)
+	Für jede Methode und Klasse wurden Tests geschrieben, damit der produktive Code zu 100% abgedeckt wird. Außerdem wurde zu jeder Testmethode eine JavaDoc-Dokumentation erstellt.
+	![JUnit with JavaDoc](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/junit_javadoc.jpg?raw=true)
 
 5. pom.xml file anpassen
 	* Developer Informationen hinzugefügt
@@ -148,9 +148,9 @@ ___
 		* maven-surefire-report-plugin
 
 6. Log4j integrieren und in jeder Methode ins Log schreiben
-	* Zuerst wurde für jeder Klasse ein Statischer Logger erstellt
-	* Außerdem wurde ein Logger properties File erstellt, um die Konfigurationen zu definieren.
-	* Bei jder Methode wurde ein Info Lognachricht implementiert.
+	* Zuerst wurde für jede Klasse ein Statischer Logger erstellt.
+	* Außerdem wurde ein Logger-properties-File erstellt, um die Konfigurationen zu definieren.
+	* Bei jeder Methode wurde eine Info-Lognachricht implementiert.
 	* Bevor ein Fehler geworfen wird, wurde eine Error Lognachricht hinzugefügt.
 	![Log4J int1](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/log4j_int_1.JPG?raw=true)
 	![Log4J int2](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/log4j_int_2.JPG?raw=true)
@@ -164,9 +164,9 @@ ___
 	![Maven Site1](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/maven_site_1.JPG?raw=true)
 	![Maven Site2](https://github.com/MarkusPaier/19-Abgabe04-Gartler-Paier/blob/master/Queue/src/site/resources/maven_site_2.JPG?raw=true)
 
-8. Ein Markdown Lab Report erstellen
+8. Einen Markdown Lab Report erstellen
 	* Es wurde ein report.md File erstellt
-	* Alle Informationen und Scritte wurden auf dem Lab Report übertragen
+	* Alle Informationen und Schritte wurden auf den Lab Report übertragen.
 	* Github Flavor Erstellen
 		<br/><br/>**Python Code**
 		```python
@@ -245,8 +245,8 @@ ___
 9. Auf Vollständigkeit prüfen
 	* Es wurde geschaut, dass alle Tasks vollständig abgearbeitet wurden.
 
-10. Aus einem Markdown eine PDF generieren
-	* Mithilfe atom.io wurde aus einem Markdown File ein PDF File generiert.
+10. Aus einem Markdown ein PDF generieren
+	* Mithilfe markdowntopdf.com wurde aus einem Markdown File ein PDF File generiert.
 
 ___
 ## LINKS / LITERATUR
